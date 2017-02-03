@@ -1,0 +1,76 @@
+body {
+	margin: 0px;
+}
+
+
+
+/**********************************************************************************/
+/*                               EN-TETE DE LA PAGE                               */
+/**********************************************************************************/
+
+header {
+	background-color: white;
+	box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.85); 
+	height: 50px;
+	margin: 0px;
+	position: fixed;
+	text-align: left;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+}
+
+h1 {
+	font-family: arial;
+	font-size: 1em;
+	line-height: 50px;
+	margin: 0px 0px 0px 20px;
+	vertical-align: middle;
+}
+
+
+
+/**********************************************************************************/
+/*                                 CORPS DE LA PAGE                               */
+/**********************************************************************************/
+
+main {
+	padding: 40px 0px 0px 0px;
+	position: relative;
+}
+
+#searchBar {
+	background-color: white;
+	box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.85); 
+	height: 200px;
+	margin: 0px;
+	width: 100%;
+	z-index: 2;
+}
+
+#pictureZone {
+	height: 1500px;
+	margin: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+/**********************************************************************************/
+/*                                  PIED DE PAGE                                  */
+/**********************************************************************************/
+
+footer {
+	background-color: white;
+	bottom: 0px;         /* for the footer positioning on the bottom of the screen */
+	box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.85); 
+	margin: auto;
+	position: fixed;  /* for the footer positioning on the bottom of the screen */
+	text-align: center;
+	width: 100%;
+}
+
+small {
+	font-family: arial;
+	font-size: 0.7em;
+	margin: auto; 
+}
