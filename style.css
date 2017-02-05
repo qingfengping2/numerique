@@ -21,83 +21,84 @@ header {
 }
 
 #titre_principal h1 {
-	font-family: arial;
-	font-size: 1em;
-	line-height: 50px;
-	margin: 0px 0px 0px 20px;
-	vertical-align: middle;
-	width: auto;
-    padding: 0px 2px 0px 10px;
     background-color: rgb(52,152,219);
     border: solid 2px rgb(52,152,219);
     color : white;
+    font-family: 'arial';
+	font-size: 1.3em;
+	line-height: 50px;
+	margin: 0px 0px 0px 20px;
+    padding: 0px 2px 0px 10px;
+	vertical-align: middle;
+	width: auto;
 }
 
 #titre_principal {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 50px;
-    width: 100%;
-    display: flex;   
-    justify-content: space-between;
     align-items: center;
-    border-top: solid 1px rgb(52,152,219);
     border-bottom: solid 2px rgb(52,152,219);
-    position: fixed;
-    z-index: 1;
+    border-top: solid 1px rgb(52,152,219);
+    display: flex;   
+    height: 50px;
+    justify-content: space-between;
     left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: fixed;
     top: 0px;
+    width: 100%;
+    z-index: 1;
 }
 
 #titre_principal a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 nav ul {
-    position: relative;
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     margin-bottom: 10px;
+    position: relative;
     width: 100%;
-
 }
 
-/* MENU DEROULANT */
-
+/*** MENU DEROULANT ***/
 #Menu {
-    display: flex;
     align-items: center;
+    display: flex;
+    margin-right: 10px;
 }
 
 #Menu ul  {
-    position: absolute;
-    width: 160px;
+    align-items: center;
+    background: rgba(20,40,13,0.9);
     display: flex;
     flex-direction: column;
-    align-items: center;
     list-style-type: none;
-    background: rgba(20,40,13,0.9);
-    padding: 5px;
     margin-top: 0px;
-    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    width: 160px;
 }
 
 #Menu li {
+    padding: 0px 5px;
     position: relative;
 }
 
 #Menu a  {
-    font-size: 1.2em;
     color: white;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin: 0px auto;
+    padding: 18px 10px 5px 10px;
+    text-align: center;
     text-decoration: none;
-    margin: 0px 10px 0px 0px;
-    padding: 18px 2px 5px 2px;
 }
 
 #Menu a:hover {
-    background-color: white;
     color: rgb(52,152,219);
+    background-color: white;
 }
 
 
@@ -111,21 +112,41 @@ main {
 	position: relative;
 }
 
+/*** BARRE DE RECHERCHE (INCLUANT IMPUT DE SAISIE ET BOUTON DE VALIDATION) ***/
 #searchBar {
 	background-color: white;
 	box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.85); 
-	height: 200px;
+	height: 98px;
 	margin: 0px;
 	width: 100%;
 	z-index: 2;
 }
 
+/*** BARRE DE SAISIE DES MOTS-CLES ***/
+#searchBar input {
+    height: 30px;
+    margin: 37px 10px 37px 23px;
+    padding-left: 5px;
+    width: 600px;
+}
+
+/*** BOUTON DE VALIDATION DES MOTS-CLES ***/
+#searchBar button {
+    height: 36px;
+    margin: 37px 3px;
+}
+
+/*** AFFICHAGE DES PHOTOGRAPHIES ***/
 #pictureZone {
+    display: flex;
+    flex-wrap: wrap;
 	height: 1500px;
 	margin: 0px;
 	width: 100%;
 	z-index: 1;
 }
+
+
 
 /**********************************************************************************/
 /*                                  PIED DE PAGE                                  */
@@ -134,13 +155,13 @@ main {
 footer {
 	background-color: white;
 	bottom: 0px;         /* for the footer positioning on the bottom of the screen */
-	box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.85); 
+	box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.85); 
+    display: flex;
+    flex-direction: column;
 	margin: auto;
 	position: fixed;  /* for the footer positioning on the bottom of the screen */
 	text-align: center;
 	width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 footer h2 {
@@ -148,29 +169,28 @@ footer h2 {
 	height: auto;
 }
 
-#liens {
-	border: 1px solid black;
-	background-color: rgba(40,53,58,0.9);
-}
-
 #listes_liens_utiles {
+   	background-color: rgba(40,53,58,0.9);
+   	border: 1px solid black;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
     padding: 0px;
-    margin: 0px;
 }
 
-#liens ul {
+#listes_liens_utiles ul {
     list-style-type: none;
+    margin: 5px 0px;
     padding-left: 2px;
 }
 
-#liens a {
-    text-decoration: none;
+#listes_liens_utiles a {
     color: rgb(191,195,196);
+    font-family: sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
 }
 
+/*** PETIT TEXTE HUMBLEWEB TOUT EN BAS ***/
 small {
 	font-family: arial;
 	font-size: 0.7em;
